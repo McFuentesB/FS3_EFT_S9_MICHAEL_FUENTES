@@ -1,0 +1,110 @@
+/* src/app/components/login/login.component.css */
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 6rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #2a2a3c;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.6rem 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #3a3a4d;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #c7c7c7;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  display: block;
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  color: #7abaff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Styles ===== */
+
+@media (max-width: 768px) {
+  .login-container {
+    margin: 4rem auto;
+    padding: 1.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  input {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+  button {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+  a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    margin: 3rem 1rem;
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  input {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  a {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,7 @@
+com\foro\publicaciones\repository\PostRepository.class
+com\foro\publicaciones\model\Post.class
+com\foro\publicaciones\PublicacionesApplication.class
+com\foro\publicaciones\controller\PostController.class
+com\foro\publicaciones\service\PostService.class
+com\foro\publicaciones\config\WebConfig.class
+com\foro\publicaciones\model\Category.class

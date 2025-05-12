@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  usuarios:
+    build:
+      context: ../foro-backend/usuarios
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../foro-backend/usuarios/src/main/resources/Wallet_FullStack3:/app/src/main/resources/Wallet_FullStack3
+
+  publicaciones:
+    build:
+      context: ../foro-backend/publicaciones
+    ports:
+      - "8081:8081"
+    volumes:
+      - ../foro-backend/publicaciones/src/main/resources/Wallet_FullStack3:/app/src/main/resources/Wallet_FullStack3
+
+  frontend:
+    build:
+      context: ../foro-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - usuarios
+      - publicaciones

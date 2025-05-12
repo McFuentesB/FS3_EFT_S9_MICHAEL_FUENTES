@@ -1,0 +1,14 @@
+<div class="full-bg">
+  <div class="dashboard-container">
+  <h2>Bienvenido, {{ username }}</h2>
+  <p>Rol: {{ role }}</p>
+
+  <div class="menu">
+    <button (click)="goTo('posts')">Ver Publicaciones</button>
+    <button *ngIf="role === 'USER'" (click)="goTo('profile')">Editar Perfil</button>
+    <button *ngIf="role === 'ADMIN'" (click)="goTo('admin')">Panel de Administración</button>
+  </div>
+
+  <button class="logout" (click)="logout()">Cerrar Sesión</button>
+</div>
+</div>

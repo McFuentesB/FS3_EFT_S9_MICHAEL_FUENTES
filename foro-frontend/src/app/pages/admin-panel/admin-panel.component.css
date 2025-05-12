@@ -1,0 +1,79 @@
+/* Contenedor principal */
+.admin-panel {
+  width: 100%;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;              /* padding reducido en móvil */
+  background: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+/* Secciones internas */
+.admin-section {
+  margin-top: 1.5rem;
+  padding: 1rem;              /* padding unificado */
+  background: #2a2a3c;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  overflow-x: auto;           /* permite scroll horizontal en tablas */
+}
+
+/* Tablas responsivas */
+.admin-section table {
+  width: 100%;
+  min-width: 600px;           /* fuerza scroll si cabezada muy ancha */
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+/* Encabezados de columna */
+th {
+  background-color: #3a3a4d;
+  padding: 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  color: #f0f0f0;
+  border-bottom: 2px solid #4b4b60;
+}
+
+/* Filas */
+td {
+  background-color: #2f2f41;
+  padding: 0.8rem;
+  border-bottom: 1px solid #444;
+  color: #c7c7c7;
+}
+
+/* Botones */
+button {
+  padding: 0.4rem 0.8rem;
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #c62828;
+}
+
+/* Ajustes para tablet y móvil */
+@media (max-width: 768px) {
+  .admin-panel {
+    margin: 1rem;
+  }
+  .admin-section {
+    margin-top: 1rem;
+    padding: 0.8rem;
+  }
+  th, td {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}

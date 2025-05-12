@@ -1,0 +1,11 @@
+<nav class="navbar">
+    <div class="brand" (click)="router.navigate(['/'])">MiForo</div>
+    <ul class="nav-links">
+      <li *ngIf="!isLoggedIn"><a routerLink="/login">Iniciar Sesión</a></li>
+      <li *ngIf="!isLoggedIn"><a routerLink="/register">Registrarse</a></li>
+      <li *ngIf="isLoggedIn"><a routerLink="/dashboard">Dashboard</a></li>
+      <li *ngIf="isLoggedIn"><a routerLink="/posts">Publicaciones</a></li>
+      <li *ngIf="role === 'ADMIN'"><a routerLink="/admin">Admin</a></li>
+      <li *ngIf="isLoggedIn"><button (click)="logout()">Cerrar Sesión</button></li>
+    </ul>
+  </nav>

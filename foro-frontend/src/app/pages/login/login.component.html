@@ -1,0 +1,13 @@
+<div class="full-bg">
+<div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form (ngSubmit)="onLogin()">
+      <input type="text" [(ngModel)]="username" name="username" placeholder="Nombre de usuario" required />
+      <input type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" required />
+      <button type="submit">Entrar</button>
+      <a (click)="goTo('recover-password')" class="link">¿Olvidaste tu contraseña?</a>
+      <a (click)="goTo('register')" class="link">¿No tienes cuenta? Regístrate</a>
+    </form>
+  </div>
+</div>
+  

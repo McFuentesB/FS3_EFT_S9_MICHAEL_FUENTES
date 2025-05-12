@@ -1,0 +1,46 @@
+
+<div class="full-bg">
+<div class="admin-panel">
+    <h2>Panel de Administración</h2>
+  
+    <section class="admin-section">
+      <h3>Usuarios Registrados</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Rol</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{ user.username }}</td>
+            <td>{{ user.role }}</td>
+            <td><button (click)="deleteUser(user.id)">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  
+    <section class="admin-section">
+      <h3>Publicaciones del Foro</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let post of posts">
+            <td>{{ post.title }}</td>
+            <td>{{ post.category }}</td>
+            <td><button (click)="deletePost(post.id)">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</div>
